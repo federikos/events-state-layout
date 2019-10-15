@@ -1,22 +1,72 @@
-.App {
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.cardsRoot {
+  margin: 10px auto;
+  max-width: 1020px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.iconSwitchWrapper {
+  margin: 25px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.iconSwitch {
+  color: #6a6a6a;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.iconSwitch:hover, .iconSwitch:active {
+  color: #000000;
+}
+
+.card {
+  display: flex;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  flex-direction: column;
+  width: 260px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 5px #bdbdbd;
+}
+
+.cardHeader {
+  margin: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.cardColor {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cardPurchase {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  color: #d5483e;
 }
 
-.App-link {
-  color: #09d3ac;
+.cardPrice {
+  font-size: 1.3rem;
+}
+
+.cardCartBtn {
+  color: #d5483e;
+  background-color: transparent;
+  border: 1px solid #d5483e;
+  padding: 10px 20px;
+  border-radius: 15%/50%;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
 }
