@@ -2,6 +2,7 @@
 
 .cardsRoot {
   margin: 10px auto;
+  padding: 0;
   max-width: 1020px;
   display: flex;
   flex-wrap: wrap;
@@ -38,14 +39,14 @@
   box-shadow: 0 4px 5px #bdbdbd;
 }
 
-.cardHeader {
+.header {
   margin: 5px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
 }
 
-.cardColor {
+.color {
   text-align: center;
 }
 
@@ -53,14 +54,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.price {
+  font-size: 1.3rem;
   color: #d5483e;
 }
 
-.cardPrice {
-  font-size: 1.3rem;
-}
-
-.cardCartBtn {
+.cartBtn {
   color: #d5483e;
   background-color: transparent;
   border: 1px solid #d5483e;
@@ -69,4 +70,14 @@
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-bottom: 2px;
+  padding: 0 10px;
 }

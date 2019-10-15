@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import IconSwitch from './IconSwitch';
 import CardsView from './CardsView';
+import ListView from './ListView';
 import cards from './data'
 // import ListView from './ListView'
 
@@ -22,7 +23,7 @@ export default () => {
         icon === 'view_list' && <CardsView cards={cards} />
       }
       {
-        // icon === 'view_module' && <ListView cards={cards} />
+        icon === 'view_module' && <ListView cards={cards} />
       }
     </>
   )

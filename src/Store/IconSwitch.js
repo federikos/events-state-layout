@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const IconSwitch = ({icon, onSwitch}) => (
   <div className='iconSwitchWrapper'>
@@ -7,5 +8,10 @@ const IconSwitch = ({icon, onSwitch}) => (
     </button>
   </div>
 );
+
+IconSwitch.propTypes = {
+  icon: PropTypes.string.isRequired,
+  onSwitch: PropTypes.func.isRequired,
+}
 
 export default IconSwitch;
