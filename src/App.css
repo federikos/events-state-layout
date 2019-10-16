@@ -81,3 +81,10 @@
   margin-bottom: 4px;
   padding: 0 10px;
 }
+
+.liImgWrapper {
+  width: 160px;
+  height: 100px;
+  background-size: cover;
+  background-position: center 70%;
+}

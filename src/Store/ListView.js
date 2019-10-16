@@ -7,7 +7,7 @@ const CardsView = ({ cards }) => (
       cards.map((card, i) => {
         return (
           <li key={i} className='li'>
-            <div className="liImgWrapper" style={{width: 160, height: 100, backgroundImage:  `url(${card.img}`, backgroundSize: 'cover', backgroundPosition: 'center 70%'}}>
+            <div className="liImgWrapper" style={{backgroundImage:  `url(${card.img}`}}>
             </div>
             <h2 className="header">{card.name}</h2>
             <span className="color">{card.color}</span>
